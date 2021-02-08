@@ -6,7 +6,7 @@ import UserInfo from "../components/landing page/landing-page"
 
 class Profile extends React.Component {
   
-  render() {t
+  render() {
     console.log(this.props)
     return (
       <div className="Profile">
