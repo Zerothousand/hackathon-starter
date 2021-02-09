@@ -15,7 +15,6 @@ class Profile extends React.Component {
         <Messages username={this.props.match.params.username} />
       </div>
     );
-  }
 }
 
 export default userIsAuthenticated(Profile);
