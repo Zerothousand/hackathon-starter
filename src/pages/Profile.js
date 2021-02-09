@@ -5,9 +5,11 @@ import { userIsAuthenticated } from "../redux/HOCs";
 import UserInfo from "../components/landing page/landing-page";
 
 class Profile extends React.Component {
+
   render() {
     console.log(this.props);
-    return (
+  
+      return (
       <div className="Profile">
         <Menu isAuthenticated={this.props.isAuthenticated} />
         <UserInfo
@@ -17,7 +19,6 @@ class Profile extends React.Component {
         <Messages username={this.props.match.params.username} />
       </div>
     );
-  }
 }
 
 export default userIsAuthenticated(Profile);
